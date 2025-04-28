@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Suchen (Dollar) Zhu's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+              <ul class="menu">
+                <li>
+                  <a href="#" onclick="showSection('profile')">Home</a>
+                </li>
+                <!--Sections dropdown -->
+                <li class="submenu">
+                  <a href="#">Portfolio</a>
+                  <ul class="dropdown">
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Experience</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#" onclick="showSection('teaching')">Teaching</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>          
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="left-section">
+                <div class="profile-pic">
+                    <img src="profile/14.svg" alt="Suchen (Dollar) Zhu" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+                </div>
+                <div class="contacts">
+                    <a href="https://www.linkedin.com/in/suchen-zhu" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    <a href="mailto:suchen_zhu@alumni.brown.edu" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+                    <a href="tel:+14138016906" aria-label="Phone"><i class="fa-solid fa-phone fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="right-section">
+              <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>Suchen (Dollar) Zhu</h1>
+              </div>
+              <div class="profile-card">
+                <p class="summary">
+                    Suchen Zhu is a dynamic entrepreneur and consultant with expertise in innovation management, entrepreneurship, and B2B software strategy. With a strong foundation in market analysis and financial forecasting, Zhu has successfully founded a gamified campus tour start-up and contributed to the development of AI tools for data analysis. Fluent in multiple programming languages and experienced in community engagement, Zhu is a versatile professional with a proven track record in both academic and professional settings.
+                </p>
+              </div>
+            </div>
+        </section>
+
+        <section id="education" class="hidden">
+            <h2 class="section-title">Education</h2>
+            <div class="content-container" id="education-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2023</div>
+                        <div class="timeline-content">
+                            <h3>Master of Science</h3>
+                            <span class="school">Brown University</span>
+                            <p class="field">Innovation Management and Entrepreneurship</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2022</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Arts</h3>
+                            <span class="school">Vassar College</span>
+                            <p class="field">French; Media Studies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container" id="experience-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jan 2024 – Now</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Founder-In-Residence</h3>
+                            <span class="institution">Moon Creative Lab</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Founded a B2B Software start-up that makes gamified campus tours for Universities, with 3000+ total student users.</li>
+                                    <li>Supported the start-up community at Moon by acting as a liaison between the incubator and community members.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 2023 - Nov 2023</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Senior Associate Consultant (Contract)</h3>
+                            <span class="institution">Topline Strategy</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Worked on three B2B software strategy projects; primarily responsible for market and customer data analysis using Excel.</li>
+                                    <li>Conducted the financial forecast and market sizing for the transportation visibility software and the truck repair software industries.</li>
+                                    <li>Used Python and JavaScript to assist in the development of AI tools for analyzing open-text survey responses and summarizing interview transcripts. Tested the tools on 5000+ datasets.</li>
+                                </ul>
+                            </div>
+                            <div class="techniques">
+                                <span class="technique-tag">Excel</span>
+                                <span class="technique-tag">Python</span>
+                                <span class="technique-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug 2022 - Dec 2022</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Go-to-market Intern</h3>
+                            <span class="institution">Adaptive Technologies Co</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Revised and created use cases and value propositions for Adaptive, a unified interface to manage access and build orchestrations for developers.</li>
+                                    <li>Managed 100+ accounts and continually assessed the needs of current clients.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="hidden">
+            <h2>Technical Skills</h2>
+            <div id="technical-skills-container" class="skills-grid">
+                <div class="skill-item">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-react"></i>
+                    <span>React.js</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-unity"></i>
+                    <span>Unity</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-language"></i>
+                    <span>Mandarin (Native)</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-language"></i>
+                    <span>English (Native)</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-language"></i>
+                    <span>French (Professional Proficiency)</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="teaching" class="hidden">
+            <h2 class="section-title">Teaching Experience</h2>
+            <div class="content-container" id="teaching-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">September 2021-May 2022</div>
+                        <div class="timeline-content">
+                            <h3 class="teaching-role">Chair of the Major Committee</h3>
+                            <span class="teaching-institution">French Department, Vassar College</span>
+                            <div class="courses-container">
+                                <h4>Courses:</h4>
+                                <ul>
+                                    <li>Engaged with the local French-speaking community and hosted 10+ events such as movie nights and French markets.</li>
+                                    <li>Taught weekly lower-intermediate level French conversation classes; organized workshops and events to foster a better language learning environment.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Default section on page load
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200; // Pause at full text before deleting
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500; // Pause before typing again
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                document.querySelectorAll('.timeline-item.active').forEach(activeItem => {
+                    if (activeItem !== this) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                this.classList.add('active');
+            });
+
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Project section
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.project-card');
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            const container = document.querySelector('.projects-container');
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+            currentSlide++;
+            updateCarousel();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+            currentSlide--;
+            updateCarousel();
+            }
+        }
+        document.addEventListener('DOMContentLoaded', updateCarousel);
+    </script>
+</body>
+</html>
